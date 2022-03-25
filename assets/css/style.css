@@ -6,15 +6,42 @@ body {
   -webkit-user-select: none;
   -ms-user-select: none;
 }
+/*
+@keyframes ShiftColor {
+  from {
+    background: rgb(152,40,234);
+    background: -moz-linear-gradient(150deg, rgba(152,40,234,1) 0%, rgba(89,9,251,1) 100%);
+    background: -webkit-linear-gradient(150deg, rgba(152,40,234,1) 0%, rgba(89,9,251,1) 100%);
+    background: linear-gradient(150deg, rgba(152,40,234,1) 0%, rgba(89,9,251,1) 100%);
+  }
+}
+*/
+@-webkit-keyframes ShiftColor {
+  0%{background-position:11% 0%}
+  50%{background-position:90% 100%}
+  100%{background-position:11% 0%}
+}
+@-moz-keyframes ShiftColor {
+  0%{background-position:11% 0%}
+  50%{background-position:90% 100%}
+  100%{background-position:11% 0%}
+}
+@-o-keyframes ShiftColor {
+  0%{background-position:11% 0%}
+  50%{background-position:90% 100%}
+  100%{background-position:11% 0%}
+}
+@keyframes ShiftColor {
+  0%{background-position:11% 0%}
+  50%{background-position:90% 100%}
+  100%{background-position:11% 0%}
+}
 
 .top {
   height: calc(100vh - 14em);
   padding-bottom: 200px;
-  color: #fff;
-  background-image: url(../img/wave_01.png);
-  background-repeat: no-repeat;
-  background-size: cover;
-  height: calc(100vh - 0px);
+  color: #fff; 
+  height: calc(110vh - 0px);
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -22,6 +49,21 @@ body {
       -ms-flex-align: center;
           align-items: center;
   line-height: 0;
+  background: rgb(152,40,234);
+  background: -moz-linear-gradient(150deg, rgba(152,40,234,1) 0%, rgba(152,40,234,1) 30%, rgba(89,9,251,1) 70%, rgba(89,9,251,1) 100%);
+  background: -webkit-linear-gradient(150deg, rgba(152,40,234,1) 0%, rgba(152,40,234,1) 30%, rgba(89,9,251,1) 70%, rgba(89,9,251,1) 100%);
+  background: linear-gradient(150deg, rgba(152,40,234,1) 0%, rgba(152,40,234,1) 30%, rgba(89,9,251,1) 70%, rgba(89,9,251,1) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#9828ea",endColorstr="#5909fb",GradientType=1);
+  background-size: 160% 160%;
+  -webkit-animation: ShiftColor 12s ease infinite;
+  -moz-animation: ShiftColor 12s ease infinite;
+  -o-animation: ShiftColor 12s ease infinite;
+  animation: ShiftColor 12s ease infinite;
+/*
+  background-image: url(../img/wave_01.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+*/
 }
 
 .top .content {
@@ -58,5 +100,13 @@ body {
   font-family: 'Inter', sans-serif;
   text-transform: uppercase;
   font-size: 1rem;
+}
+
+svg{
+  background-color:transparent;
+  -webkit-transform: scaleY(-1);
+  transform: scaleY(-1);
+  position: relative;
+  bottom: 15vw;
 }
 /*# sourceMappingURL=style.css.map */
