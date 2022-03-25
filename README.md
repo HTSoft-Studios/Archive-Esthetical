@@ -1,6 +1,5 @@
-<img style="float: left;" height=36px src="./assets/img/favicon.png">
+# <img style="float: left;" height=36px src="./assets/img/favicon.png"> Esthetical </img>
 
-# Esthetical
 
 ## 🌙🎑 We help streamers to accomplish their best!
 
