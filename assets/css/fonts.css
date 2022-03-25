@@ -1,0 +1,45 @@
+/* Inter */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+/* Roboto */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
+/* Panton */
+
+@font-face {
+    font-family: 'Panton';
+    font-style: normal;
+    font-weight: 100;
+    font-display: swap;
+    src: url(../css/Panton-BlackCaps.otf);
+}
+
+/* Panton Italic */
+
+@font-face {
+    font-family: 'Panton';
+    font-style: normal;
+    font-weight: 200;
+    font-display: swap;
+    src: url(../css/Panton-BlackitalicCaps.otf);
+}
+
+/* Panton Light */
+
+@font-face {
+    font-family: 'Panton';
+    font-style: normal;
+    font-weight: 300;
+    font-display: swap;
+    src: url(../css/Panton-LightCaps.otf);
+}
+
+/* Panton Light Italic */
+
+@font-face {
+    font-family: 'Panton';
+    font-style: normal;
+    font-weight: 300;
+    font-display: swap;
+    src: url(../css/Panton-LightitalicCaps.otf);
+}
