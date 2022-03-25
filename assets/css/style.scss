@@ -7,18 +7,73 @@ body {
     -ms-user-select: none;
 }
 
-.top {
+/*
+@keyframes ShiftColor {
+  from {
+    background: rgb(152,40,234);
+    background: -moz-linear-gradient(150deg, rgba(152,40,234,1) 0%, rgba(89,9,251,1) 100%);
+    background: -webkit-linear-gradient(150deg, rgba(152,40,234,1) 0%, rgba(89,9,251,1) 100%);
+    background: linear-gradient(150deg, rgba(152,40,234,1) 0%, rgba(89,9,251,1) 100%);
+  }
+}
+*/
+@-webkit-keyframes ShiftColor {
+    0%{background-position:11% 0%}
+    50%{background-position:90% 100%}
+    100%{background-position:11% 0%}
+  }
+  @-moz-keyframes ShiftColor {
+    0%{background-position:11% 0%}
+    50%{background-position:90% 100%}
+    100%{background-position:11% 0%}
+  }
+  @-o-keyframes ShiftColor {
+    0%{background-position:11% 0%}
+    50%{background-position:90% 100%}
+    100%{background-position:11% 0%}
+  }
+  @keyframes ShiftColor {
+    0%{background-position:11% 0%}
+    50%{background-position:90% 100%}
+    100%{background-position:11% 0%}
+  }
+  
+  .top {
     height: calc(100vh - 14em);
     padding-bottom: 200px;
-    color: #fff;
+    color: #fff; 
+    height: calc(110vh - 0px);
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    line-height: 0;
+    background: rgb(152,40,234);
+    background: -moz-linear-gradient(150deg, rgba(152,40,234,1) 0%, rgba(152,40,234,1) 30%, rgba(89,9,251,1) 70%, rgba(89,9,251,1) 100%);
+    background: -webkit-linear-gradient(150deg, rgba(152,40,234,1) 0%, rgba(152,40,234,1) 30%, rgba(89,9,251,1) 70%, rgba(89,9,251,1) 100%);
+    background: linear-gradient(150deg, rgba(152,40,234,1) 0%, rgba(152,40,234,1) 30%, rgba(89,9,251,1) 70%, rgba(89,9,251,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#9828ea",endColorstr="#5909fb",GradientType=1);
+    background-size: 160% 160%;
+    -webkit-animation: ShiftColor 12s ease infinite;
+    -moz-animation: ShiftColor 12s ease infinite;
+    -o-animation: ShiftColor 12s ease infinite;
+    animation: ShiftColor 12s ease infinite;
+  /*
     background-image: url(../img/wave_01.png);
     background-repeat: no-repeat;
     background-size: cover;
-    height: calc(100vh - 0px);
-    justify-content: center;
-    align-items: center;
-    line-height: 0;
-}
+  */
+  }
+
+  svg{
+    background-color:transparent;
+    -webkit-transform: scaleY(-1);
+    transform: scaleY(-1);
+    position: relative;
+    bottom: 15vw;
+  }
 
 .top .content {
     text-align: center;
@@ -53,4 +108,45 @@ body {
     font-family: 'Inter', sans-serif;
     text-transform: uppercase;
     font-size: 1rem;
+}
+
+/* Mobile Compatibility */
+@media (max-width: 1300px) {
+
+    .top .content {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+    
+    .top .content h2 {
+        text-align: left;
+        text-indent: 20px;
+        padding-bottom: 5px;
+        font-family: Panton;
+        font-weight: 400;
+        font-size: 0.8rem;
+        line-height: 0px;
+        text-shadow: 0 1px 1px rgba(0, 0, 0, 0.200);
+    }
+    
+    .top .content h3 {
+        font-weight: 100;
+        letter-spacing: 2px;
+        font-family: Panton;
+        text-transform: uppercase;
+        font-size: 3rem;
+        text-shadow: 0 5px 1px rgba(0, 0, 0, 0.200);
+    }
+    
+    .top .content p {
+        font-weight: 500;
+        letter-spacing: 1px;
+        line-height: 1.5;
+        font-family: 'Inter', sans-serif;
+        text-transform: uppercase;
+        font-size: 0.8rem;
+        text-align: center;
+    }
 }
