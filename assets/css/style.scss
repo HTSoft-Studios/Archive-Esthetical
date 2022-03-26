@@ -213,8 +213,9 @@ html {
   width:100%;
   list-style-type: none;
 	text-align: center;
-	background-color: rgba(0, 0, 0, 0.15);
-  font-family: 'Open Sans';
+	background-color: rgba(0, 0, 0, 0);
+  font-family: 'Inter', sans-serif;
+  font-weight: 500;
 }
 
 #navbar ul li {
@@ -223,14 +224,16 @@ html {
 
 #navbar ul li a {
   position:relative;
-  top:5px;
+  top:25px;
 	text-decoration: none;
 	padding: .4em 1.2em;
 	color: #fff;
-	background-color: rgba(0, 0, 0, 0.15);
+	background-color: rgba(0, 0, 0, 0.05);
+  transition: 0.4s;
+  border-radius: 5px;
 }
 
 #navbar ul li a:hover {
 	color: #ffff;
-	background-color: rgba(0, 0, 0, 0.25);
+	background-color: rgba(0, 0, 0, 0.15);
 }
