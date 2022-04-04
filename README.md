@@ -5,4 +5,4 @@
 
 ___
 
-> 🌊 Developed and managed by **136**, **Naibuu**. Find us at [HTSoft-Studios](https://htssoft.tk/ "Redirect to htssoft.tk")
+> 🌊 Developed by **136**, **Naibuu**. Find us at [HTSoft-Studios](https://htssoft.tk/ "Redirect to htssoft.tk")
